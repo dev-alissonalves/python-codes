@@ -1,12 +1,7 @@
-import moeda
+from pack import moeda
 
-p = float(input("Informe um valor qualquer: "))
+p = float(input("Digite o preço: R$ "))
 
-print("\n")
-print("-=-=-=-=- INÍCIO =-=-=-=")
-print(f"A metade do valor {p:.2f} é: {moeda.metade(p)}")
-print(f"O dobro do valor {p:.2f} é: {moeda.dobro(p)}")
-print(f"Aumentando 10%, temos: {moeda.aumentar(p, 10)}")
-print(f"Diminuindo 10%, temos: {moeda.diminuir(p, 10)}")
-print("-=-=-=-=- FIM =-=-=-=")
-
+print(f"A metade do valor {moeda.conv(p)} é: {moeda.conv(moeda.metade(p))}")
+print(f"O dobro do valor {moeda.conv(p)} é: {moeda.conv(moeda.dobro(p))}")
+print(f"Aumentando 10%, temos: {moeda.conv(moeda.aumentar(p, 10))}")
