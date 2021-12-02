@@ -1,7 +1,7 @@
-# -*- coding: UTF-8 -*-
 print("======== DESAFIO 002 ========")
+print("Produzido por Álisson Alves")
 nome = input("Digite seu nome: ")
-print("Meu nome é Robô James - É um prazer te conhecer,",nome+"!")
+print("Meu nome é James Robot - É um prazer te conhecer,",nome+"!")
 print(".")
 print(".")
 print(".")
